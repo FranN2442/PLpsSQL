@@ -16,8 +16,8 @@ INSERT INTO providers (name, contact, number) VALUES
 ('Distribuidora de alimentos S.A.', 'Jorge Perez', '555-1234'),
 ('Licores y bebidas finas S.A.', 'Marcela Rodriguez', '555-5678');
 
--- Insertar inventario
-INSERT INTO inventario (name, description, provider_id, quantity, price) VALUES
+
+INSERT INTO inventory (name, description, provider_id, quantity, price) VALUES
 ('Carne de res', 'Carne de res de primera calidad', 1, 10, 15.00),
 ('Pescado fresco', 'Pescado fresco del dia', 1, 5, 20.00),
 ('Botella de vino', 'Vino tinto reserva', 2, 20, 30.00),
