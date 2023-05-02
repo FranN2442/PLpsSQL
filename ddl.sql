@@ -2,38 +2,38 @@ CREATE DATABASE restaurante;
 
 \c restaurante;
 
-CREATE TABLE empleados (
+CREATE TABLE employees (
 id SERIAL PRIMARY KEY,
-nombre VARCHAR(50) NOT NULL,
-puesto VARCHAR(50) NOT NULL,
-salario DECIMAL(8,2) NOT NULL
+name VARCHAR(50) NOT NULL,
+position VARCHAR(50) NOT NULL,
+salary DECIMAL(8,2) NOT NULL
 );
 
 
-CREATE TABLE comandas (
+CREATE TABLE commands (
 id SERIAL PRIMARY KEY,
-fecha DATE NOT NULL,
-mesa INT NOT NULL,
-empleado_id INT NOT NULL,
+date DATE NOT NULL,
+table INT NOT NULL,
+employee_id INT NOT NULL,
 total DECIMAL(8,2) NOT NULL,
-FOREIGN KEY (empleado_id) REFERENCES empleados(id)
+FOREIGN KEY (employee_id) REFERENCES employees(id)
 );
 
 
-CREATE TABLE proveedores (
+CREATE TABLE providers (
 id SERIAL PRIMARY KEY,
-nombre VARCHAR(50) NOT NULL,
-contacto VARCHAR(50) NOT NULL,
-telefono VARCHAR(20) NOT NULL
+name VARCHAR(50) NOT NULL,
+contact VARCHAR(50) NOT NULL,
+number VARCHAR(20) NOT NULL
 );
 
 
-CREATE TABLE inventario (
+CREATE TABLE inventory (
 id SERIAL PRIMARY KEY,
-nombre VARCHAR(50) NOT NULL,
-descripcion VARCHAR(100) NOT NULL,
-proveedor_id INT NOT NULL,
-cantidad INT NOT NULL,
-precio DECIMAL(8,2) NOT NULL,
-FOREIGN KEY (proveedor_id) REFERENCES proveedores(id)
+name VARCHAR(50) NOT NULL,
+description VARCHAR(100) NOT NULL,
+provider_id INT NOT NULL,
+quantity INT NOT NULL,
+price DECIMAL(8,2) NOT NULL,
+FOREIGN KEY (provider_id) REFERENCES providers(id)
 );
