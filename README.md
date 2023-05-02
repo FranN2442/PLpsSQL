@@ -20,7 +20,7 @@ For this assigment I'm going to use an restauran database with 4 tables:
 - Inventory
 - Commands
 
-Here you have the [ddl.sql]() and [dml.sql]().
+Here you have the [ddl.sql](https://github.com/FranN2442/PLpsSQL/blob/master/ddl.sql) and [dml.sql](https://github.com/FranN2442/PLpsSQL/blob/master/dml.sql).
 
 ## Functions
 
