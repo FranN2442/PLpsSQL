@@ -111,7 +111,7 @@ This query is made to the command table that returns the total number of command
 To call the procedure execute:
 
 ```
-CALL get_commands_by_employees(1, p_total_commands, p_total_sells);
+CALL get_commands_by_employee(1, p_total_commands, p_total_sells);
 ```
 
 
