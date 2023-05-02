@@ -6,7 +6,7 @@ INSERT INTO employees (name, position, salary) VALUES
 ('Laura', 'Cajero', 1800.00);
 
 
-INSERT INTO commands (date, table, employee_id, total) VALUES
+INSERT INTO commands (date_command, table_command, employee_id, total) VALUES
 ('2023-05-01', 4, 1, 100.00),
 ('2023-05-01', 7, 2, 50.00),
 ('2023-05-02', 2, 3, 75.00),
